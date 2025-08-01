@@ -1,0 +1,73 @@
+Especificação do 2º Trabalho – 2025
+Classificação do Brasileirão
+
+
+No Campeonato Brasileiro de Futebol, também chamado de Brasileirão, diversos times disputam o título de melhor time do Brasil. 
+Os times jogam todos contra todos em dois turnos (ida e volta) e vão acumulando pontos.
+Cada vitória gera três pontos;
+Cada empate gera um ponto;
+A derrota não gera pontos.
+
+Cada time joga 38 partidas, totalizando 1140 pontos possíveis no campeonato, 19 como anfitrião e 19 como visitante.
+Os times são classificados de acordo com a quantidade de pontos — quem tem mais pontos fica na frente. 
+Se dois ou mais times tiverem o mesmo número de pontos, os seguintes critérios de desempate devem ser aplicados, nesta ordem:
+Número de vitórias;
+Saldo de gols (número de gols marcados menos número de gols sofridos);
+Ordem alfabética dos nomes dos times (sim, isso é injusto — mas é uma simplificação para este trabalho).
+
+Você deve projetar um programa que leia os resultados dos jogos a partir de um arquivo texto (utilize o código em anexo para isso).
+Cada linha do arquivo descreve o resultado de uma partida no seguinte formato:
+
+Anfitrião Gols Visitante Gols
+Os nomes dos times não contêm espaços.
+
+Exemplo de conteúdo do arquivo resultados.txt:
+
+Sao-Paulo 1 Atletico-MG 2
+Flamengo 2 Palmeiras 1
+Palmeiras 0 Sao-Paulo 0
+Atletico-MG 1 Flamengo 2
+
+Seu programa deve responder às seguintes perguntas:
+1. Qual a classificação dos times no campeonato?
+O programa deve exibir uma tabela com os times classificados por ordem (de acordo com os critérios já explicados), incluindo:
+
+Nome do time
+Pontos
+Número de vitórias
+Saldo de gols
+
+A largura das colunas deve ser ajustada de acordo com o conteúdo (por exemplo, a coluna de nomes deve comportar o nome mais longo).
+Saída esperada para o exemplo anterior:
+Flamengo      6   2   2
+Atletico-MG   3   1   0
+Palmeiras     1   0  -1
+Sao-Paulo     1   0  -1
+
+2. Qual o time com melhor aproveitamento como anfitrião?
+Você deve identificar o(s) time(s) que obtiveram o maior número de pontos em relação à quantidade de pontos possíveis jogando como anfitrião.
+Exemplo:
+Um time que realizou 5 jogos como anfitrião (15 pontos possíveis) e conquistou 3 vitórias e 1 empate, obteve 10 pontos — ou seja, aproveitamento de 66%.
+
+3. Qual o time com a defesa menos vazada?
+Você deve identificar o time que sofreu o menor número de gols, considerando todos os jogos (como mandante e visitante).
+
+
+Dicas de Implementação
+Resolver tudo de uma vez é complicado. Portanto, decomponha o problema em partes menores. 
+Você pode planejar o uso de funções auxiliares que ajudem a resolver subproblemas, e implementá-las depois.
+
+Por exemplo, para responder à pergunta 1:
+Descubra os nomes dos times;
+Calcule os pontos, número de vitórias e saldo de gols para cada time;
+Classifique os times com base nos critérios.
+
+Requisitos de Implementação
+Trabalhos com suspeitas de cópia serão zerados. Não compartilhe sua solução. 
+Trabalhos feitos por terceiros (como ChatGPT, colegas, veteranos, etc.) também serão zerados.
+O objetivo é verificar o que você aprendeu. Em caso de dúvida, consulte o professor.
+Leia a especificação com atenção e siga todas as instruções.
+Use tipos adequados para representar as informações.
+Utilize recursividade de forma adequada para resolver pelo menos duas das perguntas.
+Use funções que modificam seus argumentos quando apropriado.
+Não utilize tuplas, dicionários ou outras estruturas que não foram discutidas em sala de aula.
