@@ -1,8 +1,8 @@
-# 🏆 Classificação do Campeonato Brasileiro
+# Classificação do Campeonato Brasileiro
 
 Este projeto em Python calcula a tabela de classificação do Campeonato Brasileiro a partir dos resultados das partidas fornecidas em um arquivo de texto.
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 - Geração da tabela de classificação com:
   - Pontuação (3 por vitória, 1 por empate)
@@ -11,10 +11,10 @@ Este projeto em Python calcula a tabela de classificação do Campeonato Brasile
   - Ordem alfabética (em caso de empate)
 
 - Identificação do:
-  - 🏠 Melhor mandante (melhor aproveitamento em casa)
-  - 🛡️ Defesa menos vazada (menor número de gols sofridos)
+  - Melhor mandante (melhor aproveitamento em casa)
+  - Defesa menos vazada (menor número de gols sofridos)
 
-## 📥 Entrada
+## Entrada
 
 O programa recebe um arquivo `.txt` com os resultados dos jogos, com cada linha no seguinte formato:
 
